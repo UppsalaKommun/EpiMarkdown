@@ -34,7 +34,10 @@ This is an attempt to implement a markdown alternative to the default tinymce ed
 
 ### Implement an ITransformer
 
-Install-Package MarkdownDeep.NET
+Write your own Markdown to HTML engine. Or fetch one from nuget. Such as Markdownsharp or Markdowndeep.
+
+        Install-Package MarkdownDeep.NET
+
 Implement ITransformer:
 
     public class MarkdownDeepTransformer : ITransformer
