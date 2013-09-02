@@ -25,8 +25,6 @@ This is an attempt to implement a [Markdown](http://en.wikipedia.org/wiki/Markdo
 5. Add ~/Views/Shared/DisplayTemplates/Markdown.cshtml
 6. Add a markdown propery to a page definition:
 
-        [CultureSpecific]
-        [Display(Name = "Innehåll (Markdown)", Order = 35)]
         [UIHint(UppsalaKommun.EpiMarkdown.EditorDescriptors.EditorNames.MarkdownEditor, PresentationLayer.Edit)]
         [BackingType(typeof(PropertyMarkdown))]
         public virtual string MarkdownContent { get; set; }
