@@ -1,7 +1,7 @@
 EpiMarkdown
 ===========
 
-This is an attempt to implement a markdown alternative to the default tinymce editor in episerver.
+This is an attempt to implement a [Markdown](http://en.wikipedia.org/wiki/Markdown) alternative to the default [TinyMCE](http://www.tinymce.com) editor in [EPiServer](http://www.episerver.com/).
 
 ## It should...
 
@@ -37,7 +37,7 @@ This is an attempt to implement a markdown alternative to the default tinymce ed
 
 ### Implement an ITransformer
 
-Write your own Markdown to HTML engine. Or fetch one from nuget. Such as Markdownsharp or Markdowndeep.
+Write your own Markdown to HTML engine. Or fetch one from nuget. Such as [MarkdownSharp](http://www.nuget.org/packages/MarkdownSharp/) or [MarkdownDeep](http://www.nuget.org/packages/MarkdownDeep.NET/).
 
         Install-Package MarkdownDeep.NET
 
