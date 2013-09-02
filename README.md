@@ -9,6 +9,9 @@ This is an attempt to implement a markdown alternative to the default tinymce ed
 - Insert and DoD images, documents and page links
 - Live preview in edit mode
 
+<img src="https://raw.github.com/UppsalaKommun/EpiMarkdown/master/EPiMarkdown.png" alt="Screenshot" />
+[ScreenShot](https://raw.github.com/UppsalaKommun/EpiMarkdown/master/EPiMarkdown.png)
+
 ## Setup
 
 1. Add reference to UppsalaKommun.EpiMarkdown
