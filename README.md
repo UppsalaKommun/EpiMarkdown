@@ -25,3 +25,55 @@ This is an attempt to implement a markdown alternative to the default tinymce ed
         [BackingType(typeof(PropertyMarkdown))]
         public virtual string MarkdownContent { get; set; }
 7. Render property in view: @Html.PropertyFor(x => x.CurrentPage.MarkdownContent, new { tag = "Markdown"})
+
+### Implement an ITransformer
+
+Install-Package MarkdownDeep.NET
+Implement ITransformer:
+
+    public class MarkdownDeepTransformer : ITransformer
+    {
+        public string Transform(string markdown)
+        {
+            var response = markdown;
+
+            var md = new MarkdownDeep.Markdown
+            {
+                SafeMode = false,
+                ExtraMode = true,
+                AutoHeadingIDs = true,
+                MarkdownInHtml = true,
+                NewWindowForExternalLinks = true
+            };
+
+            response = md.Transform(response);
+
+            return response;
+        }
+    }
+
+### Implement an ITransformerFactory
+
+    public class TransformerFactory : ITransformerFactory
+    {
+        public IEnumerable<ITransformer> GetTransformers()
+        {
+            return new List<ITransformer>
+                {
+                    new MarkdownDeepTransformer(),
+                    new DocumentBoxTransformer(),
+                    new InformationBoxTransformer(),
+                    new WarningBoxTransformer()
+                };
+        }
+    }
+
+### Add Markdown.cshtml
+
+@using UppsalaKommun.EpiMarkdown.Services
+@model string
+@{
+    var markdownEngine = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<IMarkdownService>();
+    var response = markdownEngine.Transform(Model);
+}
+@Html.Raw(response)
