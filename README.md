@@ -3,6 +3,10 @@ EpiMarkdown
 
 This is an attempt to implement a [Markdown](http://en.wikipedia.org/wiki/Markdown) alternative to the default [TinyMCE](http://www.tinymce.com) editor in [EPiServer](http://www.episerver.com/).
 
+## Why Markdown in EPiServer!?
+
+slubbo, rock on here...
+
 ## It should...
 
 - Support episerver soft links
