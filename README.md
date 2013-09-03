@@ -12,7 +12,7 @@ slubbo, rock on here...
 The project is in an experimental stage. But if it turns out to be as useful as we hope, it should include:
 
 - Support episerver soft links
-- Insert and DoD images, documents and page links
+- Insert and DnD images, documents and page links
 - Live preview in edit mode
 
 <img src="https://raw.github.com/UppsalaKommun/EpiMarkdown/master/EPiMarkdown.png" alt="Screenshot" />
