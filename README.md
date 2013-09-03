@@ -5,7 +5,14 @@ This is an attempt to implement a [Markdown](http://en.wikipedia.org/wiki/Markdo
 
 ## Why Markdown in EPiServer!?
 
-slubbo, rock on here...
+Markdown is easy, fast, clean, portable and flexible.
+[Why Markdown?](http://brettterpstra.com/2011/08/31/why-markdown-a-two-minute-explanation/)
+
+...it ensures that the generated code is semantically correct, clean and ultimately help writers focusing on content; when you use Markdown you have no way of fiddling with complex layout, advanced table features or image alignment. You focus on what you're supposed to do: writing content. Well structured, lean, straight-forward content. And if the end result is not satisfying design-wise, then it may be a good idea to bring your design suggestions as a site-wide style improvement, as opposed to hack your way through with the help of a WYSIWYG editor.
+[Avoid WYSIWYG Editors](http://wiredcraft.com/posts/2011/12/07/avoid-wysiwyg-editors.html)
+
+[Markdown vs WYGIWYG in Symphony](http://jamesmorrish.co.uk/blog/markdown-vs-wysiwyg-in-symphony/)
+
 
 ## It should...
 
