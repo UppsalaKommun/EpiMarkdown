@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using EPiServer.Core;
 using EPiServer.Framework.DataAnnotations;
 using EPiServer.PlugIn;
@@ -8,7 +9,7 @@ namespace UppsalaKommun.EpiMarkdown
 {
     [EditorHint(EditorNames.MarkdownEditor)]
     [PropertyDefinitionTypePlugIn(Description = "A Markdown replacement for TinyMCE", DisplayName = "Uppsala.Markdown")]
-    public class PropertyMarkdown : PropertyLongString
+    public class PropertyMarkdown : PropertyLongString//, IReferenceMap
     {
         public override Type PropertyValueType
         {
@@ -20,6 +21,9 @@ namespace UppsalaKommun.EpiMarkdown
 
         public override object SaveData(PropertyDataCollection properties)
         {
+            //var test = ReferencedPermanentLinkIds;
+
+
             return LongString;
         }
 
@@ -40,6 +44,19 @@ namespace UppsalaKommun.EpiMarkdown
         {
             //No support for legacy edit mode
             return null;
+        }
+
+        public IList<Guid> ReferencedPermanentLinkIds
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public void RemapPermanentLinkReferences(IDictionary<Guid, Guid> idMap)
+        {
+            throw new NotImplementedException();
         }
     }
 }
