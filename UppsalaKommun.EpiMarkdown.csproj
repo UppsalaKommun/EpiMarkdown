@@ -60,6 +60,7 @@
     <Compile Include="Bootstrap.cs" />
     <Compile Include="EditorDescriptors\MarkdownEditorDescriptor.cs" />
     <Compile Include="EmbeddedController.cs" />
+    <Compile Include="HtmlHelpers\HtmlHelperExtensions.cs" />
     <Compile Include="MarkdownSoftLinkModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyMarkdown.cs" />
