@@ -3,7 +3,7 @@ EpiMarkdown
 
 This is an attempt to implement a [Markdown](http://en.wikipedia.org/wiki/Markdown) alternative to the default [TinyMCE](http://www.tinymce.com) editor in [EPiServer](http://www.episerver.com/).
 
-## Why Markdown in EPiServer!?
+## Why Markdown in EPiServer?
 
 Markdown is easy, fast, clean, portable and flexible.
 ...it ensures that the generated code is semantically correct, clean and ultimately help writers focusing on content; when you use Markdown you have no way of fiddling with complex layout, advanced table features or image alignment. You focus on what you're supposed to do: writing content. Well structured, lean, straight-forward content. And if the end result is not satisfying design-wise, then it may be a good idea to bring your design suggestions as a site-wide style improvement, as opposed to hack your way through with the help of a WYSIWYG editor.
