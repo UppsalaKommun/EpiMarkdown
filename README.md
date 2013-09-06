@@ -98,10 +98,11 @@ Implement ITransformer:
 
 ### Add Markdown.cshtml
 
+        @using UppsalaKommun.EpiMarkdown.HtmlHelpers
         @using UppsalaKommun.EpiMarkdown.Services
         @model string
         @{
-                var markdownEngine = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<IMarkdownService>();
-                var response = markdownEngine.Transform(Model);
+            var markdownEngine = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<IMarkdownService>();
+            var response = markdownEngine.Transform(Model);
         }
-        @Html.Raw(response)
+        @Html.RawButWithMappedUrls(response)
